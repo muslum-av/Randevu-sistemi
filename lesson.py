@@ -25,7 +25,7 @@ def eposta_gonder(ad_soyad, telefon, hizmet, tarih, saat):
   msg.attach(MIMEText(icerik, 'plain', 'utf-8'))
 
   try:
-           server = smtplib.smtp('smtp.gamil.com',587, timeout=5)
+           server = smtplib.smtp('smtp.gmail.com',587, timeout=5)
            server.starttls()
            server.login(GONDEREN_EMAIL, GONDEREN_SIFRE)
            server.send_message(msg)
