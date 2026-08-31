@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Art & Protez Tirnak Rendevu system</title>
+    </head>
+    <body>
+        <!--Navigasyon menüsü-->
+        <header>
+            <nav>
+                <h2>studio Nail</h2>
+                <ul>
+                    <li><a href="#Hizmetler">Hizmetler</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--Ana Tanitim(hero section)-->
+<section id="hero">
+    <h1>Profesyonel protez tirnak ve Nail Art Hizmeti</h1>
+        <p>Elliriniz icin şık ve kalici dokunuşlar.Hemen cevrim ici randevunuzu oluşturunuz.</p>
+        <a href="#randevu"> Randevu oluştur</a>
+</section>
+<!--Hizmetler ve fiyatlar-->
+<section id="Hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <ul>
+    <li>
+        <strong> Protez tirnak + Manikur + Duz oje yada jel :</strong> 650₺
+    </li>
+    <li>
+        <strong> Protez Tirnak + Manikur + Sinirsiz Nail Art (Tas, Kabartma, Charm, extraya geliyor ) :</strong> 850₺
+</li>
+<li>
+    <strong> pedikur+ kalici oje:</strong> 900
+    </li>
+    <li>
+                    <strong> Cikartma :</strong> 200₺
+                    </li>
+                    <li>
+            
+                    <strong> Manikur :</strong> 400₺
+                    </li>
+                    </ul>
+                </section> 
+                
+                
+                    <!-- Randevu Formu -->
+                     <section id="randevu">
+                        <h2>online Randevu Al</h2>
+                     <form action="/randevu-al" method="POST"
+<div>
+    <label for ="adsoyad"> ADINIZ  SOYADINIZ:<label><br>
+        <input type="text" id="adsoyad" name="adsoyad" required>
+    </div>
+    <br>
+    <div>
+        <label for="telefon">Telefon Numaraniz:> </label><br>
+        <input type="tel"id="telefon" name="telefon"placeholder="0551 966 43" required>
+        </div>
+        <br>
+        <div>
+            <label for="hizmet">HIZMET SECINIZ:</label><br>
+            <select id="hizmet" name="hizmet" required>
+                <option value="" disable selected>-- Hizmet Seciniz--</option>
+                <option value="Protez Tirnak + Manikur + Duz oje/jel (650 TL)">Protez Tirnak + Manikur + Duz oje/jel - 650TL</option>
+                <option value="Protez Tirnak + Manikur + Sinirsiz Nail Art (850 TL)">Protez Tirnak + Manikur + Sinirsiz Nail Art - 850TL </option>
+                <option value="Pedikur + Kalici oje (900 TL)">Pedikur + Kalici oje - 900TL</option>
+                <option value="Çikartma (200 TL)">Çikartma - 200TL</option>
+                <option value="Manikur (400 TL)">Manikur - 400TL</option>
+                </select>
+                </div>
+                <br>
+                <div>
+                    <label for="tarih">Randevu Tarihi:</label><br>
+                    <input type="date" id="tarih" name="tarih"required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="saat">Randevu saati:<label><br>
+                            <select id="saat" name="saat" required>
+                                <option value="">-- saat secin --</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit">Randevu onalyla</button>
+                        </form>
+                        </section>
+
+                    </body>
+                            </html>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+                            <style>
+                                body{
+                                    font-family: 'segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: #fcf8f8;
+                                    color: #333;
+                                }
+
+                                header {
+                                    background-color: #fff;
+                                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                                    position: sticky;
+                                    top: 0;
+                                    z-index: 100;
+                                }
+
+                                nav{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    max-width: 1100px;
+                                    margin: 0 auto;
+                                    padding: 10px 20px;
+                                }
+                                nav h2 { color: #d63384; margin:0; }
+                                nav ul {list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+                                nav a { text-decoration: none; color: #555; font-weight: 600; transition: 0.3s;}
+                                nav a:hover { color: #d63384;}
+
+                                #hero {
+                                    text-align: center;
+                                    padding: 80px 20px;
+                                    background: linear-gradient(135deg, #fde2e4 0%, #fff1f2 100%);
+                                }
+                                #hero h1 { color: #881337; font-size: 2.5rem; margin-bottom: 10px; } 
+                                #hero a {
+                                    display: inline-block;
+                                    padding: 12px 30px;
+                                    background-color: #e11d48;
+                                    color: white;
+                                    text-decoration: none;
+                                    border-radius: 25px;
+                                    font-weight: bold;
+                                }
+                                section {
+
+                                    max-width: 700px;
+                                    margin: 40px auto;
+                                    background: white;
+                                    padding: 30px;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+                                }
+                                h2 { color: #9f1239; border-bottom: 2px solid #ffe4e6; padding-bottom: 10px }
+
+                                input, select, button {
+                                    width: 100%;
+                                    padding: 12px;
+                                    margin-top: 5px;
+                                    border: 1px solid #ddd;
+                                    border-radius: 8px;
+                                    box-sizing: border-box ;
+                                }
+                                button {
+                                    background-color: #e11d48;
+                                    color:white;
+                                    font-size: 16px;
+                                    font-weight:bold;
+                                    border: none;
+                                    cursor: pointer;
+                                    margin-top: 20px;
+
+                                }
+                                button:hover { background-color: #be123c;}
+                                </style>
